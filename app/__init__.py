@@ -5,9 +5,9 @@ from flask_migrate import Migrate
 from flask_bootstrap import Bootstrap
 
 
-db = SQLAlchemy(app)
-migrate = Migrate(app, db)
-bootstrap = Bootstrap(app)
+db = SQLAlchemy()
+migrate = Migrate()
+bootstrap = Bootstrap()
 
 def create_app(config_class=Config):
   app = Flask(__name__)
